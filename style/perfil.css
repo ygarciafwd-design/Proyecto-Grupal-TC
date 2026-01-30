@@ -1,0 +1,25 @@
+/* Page specific styles for perfil.html */
+
+.profile-avatar-container {
+    display: inline-block;
+    position: relative;
+}
+
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.text-accent {
+    color: var(--accent-color);
+}
+
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.border-white-10 {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
