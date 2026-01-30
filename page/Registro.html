@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - AppCita</title>
+    <link rel="stylesheet" href="../sytle/registro.css">
+</head>
+
+<body>
+    <div class="background-container"></div>
+
+    <main class="registration-container">
+        <div class="registration-card">
+            <header>
+                <h1>Registro</h1>
+                <p>Bienvenido, crea tu cuenta para empezar</p>
+            </header>
+
+            <form action="../js/registro.js" method="POST" id="registro-form">
+                <div class="form-grid">
+                    <div class="input-group">
+                        <label for="Nombre">👤 Nombre</label>
+                        <input type="text" id="Nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="Apellido">👥 Apellido</label>
+                        <input type="text" id="Apellido" name="apellido" placeholder="Ingresa tu apellido" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="Usuario">🆔 Usuario</label>
+                        <input type="text" id="Usuario" name="usuario" placeholder="Cédula de usuario" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="Correo">📧 Correo Electrónico</label>
+                        <input type="email" id="Correo" name="correo" placeholder="ejemplo@correo.com" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="Telefono">📞 Teléfono</label>
+                        <input type="tel" id="Telefono" name="telefono" placeholder="+52 000 000 0000">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="Direccion">📍 Dirección</label>
+                        <input type="text" id="Direccion" name="direccion" placeholder="Calle, Número, Colonia">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="FechaNacimiento">📅 Fecha de Nacimiento</label>
+                        <input type="date" id="FechaNacimiento" name="fecha_nacimiento">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="Genero">⚧ Género</label>
+                        <select id="Genero" name="genero">
+                            <option value="" disabled selected>Selecciona tu género</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group full-width">
+                        <label for="Contrasena">🔒 Contraseña</label>
+                        <input type="password" id="Contrasena" name="contrasena" placeholder="********" required>
+                    </div>
+
+                    <div class="input-group full-width">
+                        <label for="ConfirmarContrasena">🛡️ Confirmar Contraseña</label>
+                        <input type="password" id="ConfirmarContrasena" name="confirmar_contrasena"
+                            placeholder="********" required>
+                    </div>
+                </div>
+
+                <div class="terms-group">
+                    <input type="checkbox" id="Terminos" name="terminos" required>
+                    <label for="Terminos">Acepto los <a href="perfil.html">términos y condiciones</a></label>
+                </div>
+
+                <button type="submit" class="btn-register">Registrarse ✨</button>
+            </form>
+
+            <footer>
+                <p>¿Ya tienes cuenta? <a href="inicio.html">Iniciar Sesión</a></p>
+                <nav class="footer-links">
+                    <a href="perfil.html">Privacidad</a>
+                    <a href="perfil.html">Ayuda</a>
+                    <a href="perfil.html">Contacto</a>
+                    <a href="perfil.html">Sobre Nosotros</a>
+                </nav>
+            </footer>
+        </div>
+    </main>
+
+    <script src="../js/registro.js"></script>
+</body>
+
+</html>
