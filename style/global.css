@@ -46,19 +46,45 @@ body {
 }
 
 .btn-primary-glass:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    filter: brightness(1.1);
 }
 
 .navbar-glass {
     background: rgba(255, 255, 255, 0.1) !important;
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--glass-border);
+    padding: 6px 0 !important;
+    /* Slightly more height */
 }
 
 .navbar-glass .nav-link,
 .navbar-glass .navbar-brand {
     color: white !important;
+    transition: var(--transition);
+    font-size: 1.65rem;
+    /* Balanced size */
+    line-height: normal;
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+    margin: 0 !important;
+}
+
+.navbar-glass .nav-link {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+}
+
+.navbar-glass .nav-link:hover,
+.navbar-glass .navbar-brand:hover {
+    color: var(--accent-color) !important;
+    transform: translateY(-2px);
+}
+
+.navbar-glass .navbar-brand img {
+    filter: brightness(0) invert(1);
+    /* Force logo to white for dark/gradient headers */
 }
 
 .navbar-glass .dropdown-menu {

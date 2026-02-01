@@ -14,6 +14,13 @@
 
 .hero-content {
     z-index: 10;
+    pointer-events: none;
+    /* Allows interactions with carousel if overlaps */
+}
+
+/* Force absolute centering to prevent layout jumps on load */
+.hero-content.translate-middle {
+    transform: translate(-50%, -50%) !important;
 }
 
 .icon-circle {
@@ -45,12 +52,10 @@
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translate(-50%, -40%);
     }
 
     to {
         opacity: 1;
-        transform: translate(-50%, -50%);
     }
 }
 
