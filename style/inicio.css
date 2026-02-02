@@ -18,6 +18,11 @@
     /* Allows interactions with carousel if overlaps */
 }
 
+.hero-content .glass-card {
+    pointer-events: auto;
+    /* Re-enables interaction for the button and content */
+}
+
 /* Force absolute centering to prevent layout jumps on load */
 .hero-content.translate-middle {
     transform: translate(-50%, -50%) !important;

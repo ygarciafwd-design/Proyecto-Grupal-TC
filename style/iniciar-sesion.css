@@ -1,0 +1,51 @@
+/* Standardized Styles for Login Page */
+
+.text-accent {
+    color: var(--accent-color) !important;
+    transition: var(--transition);
+}
+
+.text-accent:hover {
+    filter: brightness(1.2);
+    text-shadow: 0 0 10px rgba(0, 210, 255, 0.4);
+}
+
+.form-control {
+    background: var(--input-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 12px 16px;
+    color: white !important;
+    transition: var(--transition);
+}
+
+.form-control:focus {
+    background: var(--input-focus);
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 4px rgba(0, 210, 255, 0.2);
+    outline: none;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.glass-card {
+    border: 1px solid var(--glass-border);
+}
