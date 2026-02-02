@@ -45,6 +45,7 @@
     background: rgba(255, 255, 255, 0.15);
 }
 
+/* Animación de fade-in */
 .animate-fade-in {
     animation: fadeIn 1s ease-out;
 }
